@@ -1,34 +1,72 @@
-body{
-    text-align: center;
+body {
+  background-color: #000;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
 }
 
-.btn{
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
-    border: 10px solid black;
-    margin: 2.5rem;
-}    
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
 
-.btn-container{
-    display: flex;
-    justify-content: center;
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
-.yellow{
-    background-color: #f99b45;
+
+.game-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
 }
-.red{
-    background-color: #d95980;
+
+.btn {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
-.green{
-    background-color: #63aac0;
+
+.btn:active {
+  transform: scale(0.95);
 }
-.purple{
-    background-color: #819ff9;
+
+.red {
+  background-color: #f44336;
 }
-.flash{
-    background-color: white;
+
+.green {
+  background-color: #4caf50;
 }
-.userflash{
-    background-color: greenyellow;
+
+.blue {
+  background-color: #2196f3;
+}
+
+.yellow {
+  background-color: #ffeb3b;
+}
+
+.pressed {
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .game-container {
+    gap: 10px;
+  }
 }
